@@ -30,20 +30,21 @@ X0  = np.array([0.0,0.0,0.0,0.0])
 tolera = 0.01
 iteramax = 100
 
+
 #Results.
 
-print("Results:")
+print("\n**Results**\n")
 
-print("Used A, B, X0, tolera, iteramax:")
-print(A, "\n\n", B, "\n\n", X0, "\n", tolera, "\n", iteramax, "\n\n\n")
+print("Used A, B\n")
+print(A, "\n\n", B, "\n\n")
 
-print("*Answers*")
+print("**Answers**\n")
 
-print('X: ')
+print('X:\n')
 print(gauss_seidel(A, B, X0, tolera, iteramax)[0])
 
-print('A.X=B: ')
+print('\nA.X=B: \n')
 print(gauss_seidel(A, B, X0, tolera, iteramax)[1])
 
-print('Needed iterations: ')
+print('\nNeeded iterations: \n')
 print(gauss_seidel(A, B, X0, tolera, iteramax)[2])
